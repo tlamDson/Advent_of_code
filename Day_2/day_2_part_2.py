@@ -40,3 +40,5 @@ if len(real_input.strip()) > 0:
     print(f"Final Sum: {solve_gift_shop_part2(input_data)}")
 else:
     print("\n(Paste your specific puzzle input into the 'real_input' variable)")
+
+#Final Sum: 26202168557
