@@ -44,9 +44,8 @@ def count_paths(node, adj, memo):
     memo[node] = total_paths
     return total_paths
 
-# Assuming the file structure matches your previous example
 with open("./Day_11/input.txt", 'r') as file:
     input_data = file.read()
 print(f"Answer: {solve_reactor(input_data)}")
 
-# Answer : (Depends on your specific input file)
+# Answer : 758

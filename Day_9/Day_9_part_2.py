@@ -1,5 +1,3 @@
-import time
-
 def solve_movie_theater_sparse(input_data):
     
     lines = [line.strip() for line in input_data.split('\n') if line.strip()]
@@ -107,7 +105,6 @@ def solve_movie_theater_sparse(input_data):
                     max_area = area
 
     return max_area
-
 real_input = "./Day_9/input.txt"
 
 try:
@@ -116,3 +113,5 @@ try:
     print(solve_movie_theater_sparse(input_data))
 except FileNotFoundError:
     print("File not found.")
+
+#Answer : 1343576598

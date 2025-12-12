@@ -62,3 +62,5 @@ try:
     print(solve_playground(input_data))
 except FileNotFoundError:
     print(0)
+
+# Answer : 90036

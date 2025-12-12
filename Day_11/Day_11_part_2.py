@@ -25,7 +25,6 @@ def solve_reactor(input_data):
         return dfs_count(start, end, adj, {})
 
     # Calculate paths for Sequence 1: svr -> dac -> fft -> out
-    # We multiply the counts of each segment to get the total combinations
     path_seq_1 = (count_between('svr', 'dac') * count_between('dac', 'fft') * count_between('fft', 'out'))
     
     # Calculate paths for Sequence 2: svr -> fft -> dac -> out
@@ -56,3 +55,5 @@ def dfs_count(node, target, adj, memo):
 with open("./Day_11/input.txt", 'r') as file:
     input_data = file.read()
 print(f"Answer: {solve_reactor(input_data)}")
+
+# Answer : 490695961032000
